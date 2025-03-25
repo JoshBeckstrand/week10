@@ -31,3 +31,6 @@ variable "AWS_SESSION_TOKEN" {
   description = "Sesssion token"
   
 }
+ 
+  
+  
