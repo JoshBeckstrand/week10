@@ -31,7 +31,6 @@
 #   description = "Sesssion token"
   
 # }
-
 terraform {
   cloud {
     organization = "your-terraform-cloud-org" 
