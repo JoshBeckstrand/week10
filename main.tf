@@ -33,10 +33,10 @@
 # }
 terraform {
   cloud {
-    organization = "your-terraform-cloud-org" 
+    organization = "week10" 
 
     workspaces {
-      name = "your-workspace-name" 
+      name = "week10" 
     }
   }
 }
