@@ -90,3 +90,5 @@ resource "aws_instance" "example" {
 resource "aws_eip" "example" {
   instance = aws_instance.example.id
 }
+
+
