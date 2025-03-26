@@ -31,7 +31,17 @@
 #   description = "Sesssion token"
   
 # }
- 
+
+terraform {
+  cloud {
+    organization = "your-terraform-cloud-org" 
+
+    workspaces {
+      name = "your-workspace-name" 
+    }
+  }
+}
+
   
 terraform {
   required_providers {
