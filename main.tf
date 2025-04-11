@@ -100,4 +100,17 @@ output "security_group_id" {
 }
 
 
+resource "aws_ebs_volume" "extra_volume" {
+  availability_zone = aws_instance.example.availability_zone
+  size              = 5 # 5 GB
+  type              = "gp2"
+}
+
+resource "aws_volume_attachment" "ebs_att" {
+  device_name = "/dev/sdf" # Might show as /dev/xvdf on the instance
+  volume_id   = aws_ebs_volume.extra_volume.id
+  instance_id = aws_instance.example.id
+  force_detach = true
+}
+
 
